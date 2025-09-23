@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/profile")
-@CrossOrigin(origins = "http://ec2-54-83-122-162.compute-1.amazonaws.com:5173") // optional, already in SecurityConfig
+@CrossOrigin(origins = "http://localhost:5173") // optional, already in SecurityConfig
 public class ProfileController {
 
     @Autowired
