@@ -1,16 +1,6 @@
-package com.example.demo.controller;
-
-import com.example.demo.model.User;
-import com.example.demo.service.AuthService;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
-
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173") // React app
+@CrossOrigin(origins = "*") // Allow all origins
 public class AuthController {
 
     private final AuthService authService;
