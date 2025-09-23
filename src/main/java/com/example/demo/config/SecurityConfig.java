@@ -29,7 +29,7 @@ public class SecurityConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:5173,"http://ec2-13-218-220-63.compute-1.amazonaws.com:5173"")
+                        .allowedOrigins("http://localhost:5173","http://ec2-13-218-220-63.compute-1.amazonaws.com:5173")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
